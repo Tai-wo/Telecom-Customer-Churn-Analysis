@@ -402,6 +402,21 @@ Targeted Retention Campaigns
 Improved Customer Engagement
       ↓
 Reduced Churn
+---
+
+## Tools and Why
+
+| Tool | Used for | Why |
+|---|---|---|
+| Python + Pandas | Data cleaning, transformation, and exploratory analysis | Flexible data manipulation and statistical analysis |
+| NumPy | Numerical operations | Efficient numerical processing |
+| Matplotlib | Exploratory visualizations | Reproducible Python-based data visualization |
+| SQL | Business question analysis | Structured querying and aggregation of customer data |
+| DuckDB | SQL execution | Lightweight analytical database suitable for querying CSV data |
+| Tableau | Interactive dashboards | Communicates analytical findings clearly to business stakeholders |
+| Git + GitHub | Version control and project hosting | Tracks project development and supports reproducibility |
+
+## Project Structure
 Telecom-Customer-Churn-Analysis/
 │
 ├── assets/
@@ -415,13 +430,16 @@ Telecom-Customer-Churn-Analysis/
 │   │
 │   └── processed/
 │       └── telco_Customer_Churn_clean.csv
+|   └──telecom_churn_feature_engineered.csv
 │
 ├── notebooks/
-│   ├── 01_eda.ipynb
-│   └── 02_feature_engineering.ipynb
+│   ├── 01_Data_Understanding.ipynb
+│   └── 02_data_cleaning.ipynb
+|   └── 03Exploratory_Data_Analysis.ipynb
+|   └── 04_Feature_Engineering.ipynb
 │
 ├── sql/
-│   └── churn_analysis.sql
+│   └── telecom_churn_analysis.sql
 │
 ├── tableau/
 │   └── Telecom_Customer_Churn_Analysis.twbx
@@ -430,3 +448,13 @@ Telecom-Customer-Churn-Analysis/
 ├── requirements.txt
 ├── .gitignore
 └── README.md
+
+## Setup
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Tai-wo/Telecom-Customer-Churn-Analysis.git
+cd Telecom-Customer-Churn-Analysis
+.\venv\Scripts\Activate.ps1
+pip install -r requirements.txt
